@@ -1,0 +1,142 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>0.6.2.1</Version>
+    <Authors>swoosh</Authors>
+    <Company>swoosh</Company>
+    <Copyright>Copyright (c) 2020 swoosh</Copyright>
+    <ApplicationIcon>appicon.ico</ApplicationIcon>
+    <Product>Steam Account Checker</Product>
+    <PackageReleaseNotes>Plans for the next release (Minor 0.6.3):
+
+	- None
+
+Minor release: 0.6.2.1
+
+	- Changed wait time from 0.2 to 1. This will result in lower speeds when trying to check for accounts but it will make sure Steam does not stop your IP temporarily from doing that.
+
+	Known bugs:
+	- None
+
+Major release: 0.6.2
+
+	- Changed app design;
+	- Fixed minor bugs;
+	- Organized code.
+
+	Known bugs:
+	- None
+
+Major release: 0.6.1
+
+	- Uploaded project on Github: https://github.com/swooshXE/steam-account-checker
+	- Changed app design;
+	- Fixed a bug where you couldn't export accounts;
+	- Fixed minor bugs;
+	- Organized code.
+
+	Known bugs:
+	- None
+
+Major release: 0.6.0
+
+	- Improved app responsiveness;
+	- Changed app design;
+	- Fixed bugs;
+	- Organized code;
+
+	[Automatic]
+	- Fixed a bug where you couldn't check more than one time (finally);
+
+	[Automatic &amp; Manual]
+	- Added right click options on the list control;
+	- Added options to show coloured items on the list control;
+
+	Known bugs:
+	- None
+
+Minor release: 0.5.9
+
+	- [MAJOR] Improved app responsiveness;
+	- Fixed bugs;
+	- Changed app design;
+	- Organized code;
+
+	Known bugs:
+	- Some features are not yet implemented;
+	- Can't check more than one time by check automatically (will fix asap);
+
+Minor release: 0.5.8
+
+	- fixed minor bugs;
+	- changed app icon;
+	- changed app design;
+	- added settings tab;
+	- organized code;
+
+	known bugs:
+	- can't interact with window when searching;
+	- can't check more than one time by check automatically (throws error: index out of bounds);
+
+Minor release: 0.5.3
+
+	- fixed bugs;
+	- fixed account exportation;
+
+	known bugs:
+	- can't check more than one time with automatic file check;
+	- can't interact with window when searching;
+
+Minor release: 0.3.6
+
+	- fixed bugs;
+
+	known bugs:
+	- can't check more than one time with automatic file check;
+	- can't interact with window when searching;
+
+Minor release: 0.1
+
+	- created app;
+
+	known bugs:
+	- can't export good, sgprotected, bad accounts;
+	- can't check more than one time with automatic file check;
+	- can't interact with window when searching;</PackageReleaseNotes>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SteamKit2" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="appicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
