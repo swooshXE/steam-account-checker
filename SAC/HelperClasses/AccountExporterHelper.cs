@@ -28,6 +28,7 @@ namespace SAC.HelperClasses
                             streamWriterGoodAccounts.WriteLine(goodAccounts);
                             streamWriterGoodAccounts.Close();
                             break;
+
                         case WhatToExport.BADCCOUNTS:
                             string badAccounts = string.Join("", SteamAccountHelper.badAccountsList.ToArray());
                             StreamWriter streamWriterBadAccounts = new StreamWriter($"{SteamAccountHelper.localToExport}\\Bad Accounts.txt");
@@ -35,6 +36,7 @@ namespace SAC.HelperClasses
                             streamWriterBadAccounts.WriteLine(badAccounts);
                             streamWriterBadAccounts.Close();
                             break;
+
                         case WhatToExport.SGPROTECTEDACCOUNTS:
                             string sGProtectedAccounts = string.Join("", SteamAccountHelper.sGProtectedAccountsList.ToArray());
                             StreamWriter streamWriterSGAccounts = new StreamWriter($"{SteamAccountHelper.localToExport}\\SteamGuard protected Accounts.txt");

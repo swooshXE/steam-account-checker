@@ -43,23 +43,70 @@ namespace SAC
         {
             if (tabControl1.SelectedIndex == 1)
             {
-                BackgroundWorker automaticWorker = new BackgroundWorker();
-                LogHelper.Log("Cleaning up...\n");
-                AccountChecker.CleanupUpdate();
-                automaticWorker.DoWork += new DoWorkEventHandler(AutomaticCheckBW_DoWork);
-                automaticWorker.RunWorkerAsync();
-                UIHelper.EnableUI(false);
-                UIHelper.ShowUI(true);
+                try
+                {
+                    if (!(SteamAccountHelper.filePath == string.Empty))
+                    {
+                        if (File.Exists(SteamAccountHelper.filePath))
+                        {
+                            if (!(SteamAccountHelper.fileContent == string.Empty))
+                            {
+                                if (!(SteamAccountHelper.fileContent.Contains(" ")))
+                                {
+                                    BackgroundWorker automaticWorker = new BackgroundWorker();
+
+                                    LogHelper.Log("Cleaning up...\n");
+                                    AccountChecker.CleanupUpdate();
+
+                                    LogHelper.Log("Starting automatic check...\n");
+                                    automaticWorker.DoWork += new DoWorkEventHandler(AutomaticCheckBW_DoWork);
+                                    automaticWorker.RunWorkerAsync();
+
+                                    UIHelper.EnableUI(false);
+                                    UIHelper.ShowUI(true);
+                                }
+                                else
+                                    MessageBox.Show("The file contains an invalid character (space) and it may fuck up with checking.\n\nThis will be fixed in a newer version but in the meantime here's what you can do to fix it:\n1. Edit the file you're using by deleting any strings that contains space;\n2. Load the file again and re-check;\n3. (Optional) Throw your PC out the window.", "File contains invalid character", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                                MessageBox.Show("The file you tried to check for doesn't exist or is inaccessible. Please try placing the file in a different location", "File", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                            MessageBox.Show("File Path needs to have content in it", "File Path", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                        MessageBox.Show($"You need to open a file with Steam accounts", "Open a file", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Failed. Error: {ex.Message}", "Internal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else if (tabControl1.SelectedIndex == 0)
             {
-                BackgroundWorker manualWorker = new BackgroundWorker();
-                LogHelper.Log("Cleaning up...\n");
-                AccountChecker.CleanupUpdate();
-                manualWorker.DoWork += new DoWorkEventHandler(ManualCheckBW_DoWork);
-                manualWorker.RunWorkerAsync();
-                UIHelper.EnableUI(false);
-                UIHelper.ShowUI(true);
+                if (Program.mw.textBox1.Text == "" | Program.mw.textBox2.Text == "")
+                    MessageBox.Show("You need to enter a username and password", "Manual Check", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                {
+                    try
+                    {
+                        BackgroundWorker manualWorker = new BackgroundWorker();
+
+                        LogHelper.Log("Cleaning up...\n");
+                        AccountChecker.CleanupUpdate();
+
+                        LogHelper.Log("Starting manual check...\n");
+                        manualWorker.DoWork += new DoWorkEventHandler(ManualCheckBW_DoWork);
+                        manualWorker.RunWorkerAsync();
+
+                        UIHelper.EnableUI(false);
+                        UIHelper.ShowUI(true);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Failed. Error: {ex.Message}", "Internal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
             else
                 MessageBox.Show("Choose 'Check manually' or 'Check automatically' to check for steam accounts", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -70,6 +117,7 @@ namespace SAC
             AccountChecker.CheckAutomatically();
             UIHelper.EnableUI(true);
             UIHelper.ShowUI(false);
+            LogHelper.Log("✔ Done");
         }
 
         public void ManualCheckBW_DoWork(object sender, DoWorkEventArgs e)
@@ -77,8 +125,10 @@ namespace SAC
             AccountChecker.CheckManually();
             UIHelper.EnableUI(true);
             UIHelper.ShowUI(false);
+            LogHelper.Log("✔ Done");
         }
 
+        //TODO: what and where is button2?
         private void button2_Click(object sender, EventArgs e) => MessageBox.Show("wat is dis?", "wat??", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         private void button3_Click(object sender, EventArgs e) => ClipboardHelper.CopyDiscord();
@@ -152,9 +202,9 @@ namespace SAC
             }
         }
 
+        //TODO: Add dragover capabilities to the textbox
         private void textBoxFile_DragOver(object sender, DragEventArgs e)
         {
-            //TODO: Add dragover capabilities to the textbox
             //if (e.Data.GetDataPresent(DataFormats.FileDrop))
             //{
             //    string[] fileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
