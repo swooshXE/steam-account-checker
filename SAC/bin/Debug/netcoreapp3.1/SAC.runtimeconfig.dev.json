@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\jomor\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\jomor\\.nuget\\packages"
-    ]
-  }
-}
