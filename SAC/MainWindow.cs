@@ -18,7 +18,6 @@ namespace SAC
             pictureBox1.BackgroundImage = Resources.icon;
             tabControl1.SelectedIndex = 3;
 
-            Settings.ShowInitialMessage();
             whatsHappening.Visible = false;
             loadingImage.Visible = false;
             ButtonStart.Enabled = false;
@@ -80,7 +79,7 @@ namespace SAC
             UIHelper.ShowUI(false);
         }
 
-        private void button2_Click(object sender, EventArgs e) => Settings.ShowInitialMessage();
+        private void button2_Click(object sender, EventArgs e) => MessageBox.Show("wat is dis?", "wat??", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         private void button3_Click(object sender, EventArgs e) => ClipboardHelper.CopyDiscord();
 
