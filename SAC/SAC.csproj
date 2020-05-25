@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Version>0.6.2.2</Version>
+    <Version>0.6.2.3</Version>
     <Authors>swoosh</Authors>
     <Company>swoosh</Company>
     <Copyright>Copyright (c) 2020 swoosh</Copyright>

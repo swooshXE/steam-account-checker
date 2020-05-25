@@ -39,6 +39,17 @@ namespace SAC
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
 
 
+
+
+
+
+
+
+
+
+
+
+
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             if (tabControl1.SelectedIndex == 1)
@@ -128,9 +139,6 @@ namespace SAC
             LogHelper.Log("✔ Done");
         }
 
-        //TODO: what and where is button2?
-        private void button2_Click(object sender, EventArgs e) => MessageBox.Show("wat is dis?", "wat??", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         private void button3_Click(object sender, EventArgs e) => ClipboardHelper.CopyDiscord();
 
         private void button4_Click(object sender, EventArgs e)
@@ -139,7 +147,6 @@ namespace SAC
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog
                 {
-                    InitialDirectory = "C:\\",
                     Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*",
                     FilterIndex = 2,
                     RestoreDirectory = true

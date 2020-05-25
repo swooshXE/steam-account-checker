@@ -143,7 +143,7 @@
             this.tabControl1.Controls.Add(this.tabAbout);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.SelectedIndex = 3;
             this.tabControl1.Size = new System.Drawing.Size(860, 430);
             this.tabControl1.TabIndex = 4;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
@@ -639,10 +639,12 @@
             // labelStatus
             // 
             this.labelStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelStatus.AutoEllipsis = true;
+            this.labelStatus.BackColor = System.Drawing.SystemColors.Control;
             this.labelStatus.Location = new System.Drawing.Point(35, 2);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.labelStatus.Size = new System.Drawing.Size(363, 28);
+            this.labelStatus.Size = new System.Drawing.Size(637, 28);
             this.labelStatus.TabIndex = 6;
             // 
             // columnHeader4
@@ -673,11 +675,12 @@
             // 
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.flowLayoutPanel1.Controls.Add(this.loadingImage);
             this.flowLayoutPanel1.Controls.Add(this.labelStatus);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 444);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(412, 34);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(695, 34);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // MainWindow
