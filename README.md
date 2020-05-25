@@ -2,9 +2,10 @@
 
 🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds 🔥
 
+## Download it here: https://github.com/swooshXE/steam-account-checker/releases
+
 ## Development
 SAC is still in a alpha stage and there's still some bugs to fix and some work to do. If you would like to contribute, you can contact me via Discord (𝙨𝙬𝙤𝙤𝙨𝙝#1673) and help the development of SAC.
-
 
 ## What can you do:
 
@@ -21,3 +22,9 @@ username:password
 ...
 ```
 - Hit 'Check for accounts'
+
+### Status messages:
+
+- **SteamGuard protected** - The account EXISTS but in order to log in, you must verify it with its associated e-mail address
+- **InvalidPassword** - The account doesn't exist (or mispelled something)
+- **ServiceUnavailable** - Couldn't connect to Steam servers (it's probably down)
