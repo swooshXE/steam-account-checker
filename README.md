@@ -25,7 +25,7 @@ username:password
 
 ### Status messages:
 
-- **<nothing>** - Successfully connected to account
+- **«nothing»** - Successfully connected to account
 - **SteamGuard protected** - The account EXISTS but in order to log in, you must verify it with its associated e-mail address
 - **InvalidPassword** - The account doesn't exist (or mispelled something)
 - **ServiceUnavailable** - Couldn't connect to Steam servers (it's probably down)
