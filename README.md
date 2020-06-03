@@ -28,5 +28,5 @@ username:password
 - **«nothing»** - Successfully connected to account
 - **SteamGuard protected** - The account EXISTS but in order to log in, you must verify it with its associated e-mail address
 - **InvalidPassword** - The account doesn't exist (or mispelled something)
-- **RateLimitExceeded** - You've checked too many times for this account in a short period of time
+- **RateLimitExceeded** - You've checked too many accounts in a short period of time (WE'LL FIX THIS SOON WITH PROXYS!)
 - **ServiceUnavailable** - Couldn't connect to Steam servers (it's probably down)
