@@ -1,6 +1,6 @@
 # steam-account-checker
 
-🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds 🔥
+🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds
 
 #### Download it here: https://github.com/swooshXE/steam-account-checker/releases
 
