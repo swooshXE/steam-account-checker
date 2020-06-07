@@ -10,7 +10,8 @@ SAC is still in a alpha stage and there's still some bugs to fix and some work t
 
 ### Plans for the next releases (in order of priority):
 - Task splitting (multi-threading, so you can check multiple accounts at the same time);
-- Proxy addition;
+- Different account formatting (currently it's ```username:password```);
+- Proxys;
 
 
 ## What can you do:
