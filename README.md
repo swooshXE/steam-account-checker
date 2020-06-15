@@ -2,6 +2,8 @@
 
 🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds
 
+## SwooshXE is looking for developers to help the development of SAC. Add here for more information: 𝙨𝙬𝙤𝙤𝙨𝙝#1673 
+
 #### Download it here: https://github.com/swooshXE/steam-account-checker/releases
 
 
