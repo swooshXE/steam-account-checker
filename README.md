@@ -2,19 +2,15 @@
 
 🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds
 
-## SwooshXE is looking for developers to help the development of SAC. Add here for more information: 𝙨𝙬𝙤𝙤𝙨𝙝#1673 
+## JOIN MY DISCORD: https://discord.gg/dU5gbz4
+## CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
 
 #### Download it here: https://github.com/swooshXE/steam-account-checker/releases
 
-
 ## Development
-SAC is still in a alpha stage and there's still some bugs to fix and some work to do. If you would like to contribute, you can contact me via Discord (𝙨𝙬𝙤𝙤𝙨𝙝#1673) and help the development of SAC.
+This version of SAC will most likely not be updated as I'm working on a V2. I'm developing my own set of tools (sxetools) and SAC V2 will be part of it.
 
-### Plans for the next releases (in order of priority):
-- Task splitting (multi-threading, so you can check multiple accounts at the same time);
-- Different account formatting (currently it's ```username:password```);
-- Proxys;
-
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 ## What can you do:
 
@@ -37,5 +33,5 @@ username:password
 - **«nothing»** - Successfully connected to account
 - **SteamGuard protected** - The account EXISTS but in order to log in, you must verify it with its associated e-mail address
 - **InvalidPassword** - The account doesn't exist (or mispelled something)
-- **RateLimitExceeded** - You've checked too many accounts in a short period of time (WE'LL FIX THIS SOON WITH PROXYS!)
+- **RateLimitExceeded** - You've checked too many accounts in a short period of time - Adding proxys in V2
 - **ServiceUnavailable** - Couldn't connect to Steam servers (it's probably down)
