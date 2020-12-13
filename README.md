@@ -2,8 +2,9 @@
 
 🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds
 
-## JOIN MY DISCORD: https://discord.gg/dU5gbz4
+## JOIN MY DISCORD: https://discord.gg/5MeP3xPdBC
 New info about SAC will be there, along with other projects I'm working on!
+If that doesn't work:
 ## CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
 
 #### Download it here: https://github.com/swooshXE/steam-account-checker/releases
