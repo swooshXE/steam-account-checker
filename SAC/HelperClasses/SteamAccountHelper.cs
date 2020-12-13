@@ -15,7 +15,7 @@ namespace SAC.HelperClasses
         public static SteamUser steamUser;
 
         public static string userName, password;
-
+ 
         public static string fileContent = string.Empty;
         public static string filePath = string.Empty;
         public static string localToExport = string.Empty;
