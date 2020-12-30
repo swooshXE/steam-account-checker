@@ -1,16 +1,13 @@
-# steam-account-checker
+## This version is deprecated. Find a newer one at my discord: https://discord.gg/cJSh8ksxp6
+## Where I post other Steam tools. If that doesn't work, CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
 
+
+# steam-account-checker v1
 🔥 Check your Steam accounts to see if they are created and SteamGuard protected within seconds
 
-## JOIN MY DISCORD: https://discord.gg/5MeP3xPdBC
-New info about SAC will be there, along with other projects I'm working on!
-If that doesn't work:
-## CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
-
 #### Download it here: https://github.com/swooshXE/steam-account-checker/releases
-
 ## Development
-This version of SAC will most likely not be updated as I'm working on a V2. I'm developing my own set of tools (sxetools) and SAC V2 will be part of it.
+This version of SAC will most likely not be updated as I'm working on a V2. I'm developing my own set of tools (sxetools) and SAC V2 will be part of it. Join my discord server for more info at the beggining of this post.
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
