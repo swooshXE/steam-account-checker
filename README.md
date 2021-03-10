@@ -1,6 +1,6 @@
-## This version is **DEPRECATED**. Find a newer one at my discord: https://discord.gg/cJSh8ksxp6 where I post other Steam tools. If that doesn't work, CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
+## WARNING: This version is **DEPRECATED**. Find a newer one at my discord: https://discord.gg/cJSh8ksxp6 where I post other Steam tools. If that doesn't work, CONTACT ME VIA DISCORD: 𝙨𝙬𝙤𝙤𝙨𝙝#1673
 
-SAC v2 is being worked on! Join my discord above to receive new updates.
+WARNING: SAC v2 is being worked on! Join my discord above to receive new updates.
 
 
 
