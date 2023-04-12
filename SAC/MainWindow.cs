@@ -38,18 +38,6 @@ namespace SAC
 
         private void MainWindow_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
 
-
-
-
-
-
-
-
-
-
-
-
-
         private void ButtonStart_Click(object sender, EventArgs e)
         {
             if (tabControl1.SelectedIndex == 1)
@@ -62,22 +50,21 @@ namespace SAC
                         {
                             if (!(SteamAccountHelper.fileContent == string.Empty))
                             {
-                                if (!(SteamAccountHelper.fileContent.Contains(" ")))
+                                if (SteamAccountHelper.fileContent.Contains(" "))
                                 {
-                                    BackgroundWorker automaticWorker = new BackgroundWorker();
-
-                                    LogHelper.Log("Cleaning up...\n");
-                                    AccountChecker.CleanupUpdate();
-
-                                    LogHelper.Log("Starting automatic check...\n");
-                                    automaticWorker.DoWork += new DoWorkEventHandler(AutomaticCheckBW_DoWork);
-                                    automaticWorker.RunWorkerAsync();
-
-                                    UIHelper.EnableUI(false);
-                                    UIHelper.ShowUI(true);
+                                    SteamAccountHelper.fileContent = SteamAccountHelper.fileContent.Replace(" ", "");
                                 }
-                                else
-                                    MessageBox.Show("The file contains an invalid character (space) and it may fuck up with checking.\n\nThis will be fixed in a newer version but in the meantime here's what you can do to fix it:\n1. Edit the file you're using by deleting any strings that contains space;\n2. Load the file again and re-check;\n3. (Optional) Throw your PC out the window.", "File contains invalid character", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                                BackgroundWorker automaticWorker = new BackgroundWorker();
+                                LogHelper.Log("Cleaning up...\n");
+                                AccountChecker.CleanupUpdate();
+
+                                LogHelper.Log("Starting automatic check...\n");
+                                automaticWorker.DoWork += new DoWorkEventHandler(AutomaticCheckBW_DoWork);
+                                automaticWorker.RunWorkerAsync();
+
+                                UIHelper.EnableUI(false);
+                                UIHelper.ShowUI(true);
                             }
                             else
                                 MessageBox.Show("The file you tried to check for doesn't exist or is inaccessible. Please try placing the file in a different location", "File", MessageBoxButtons.OK, MessageBoxIcon.Information);
