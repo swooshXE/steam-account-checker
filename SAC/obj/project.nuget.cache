@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "eU49qbGk/gk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geron\\steam-account-checker\\SAC\\SAC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geron\\.nuget\\packages\\protobuf-net\\3.4.30\\protobuf-net.3.4.30.nupkg.sha512",
+    "C:\\Users\\geron\\.nuget\\packages\\protobuf-net.core\\3.4.30\\protobuf-net.core.3.4.30.nupkg.sha512",
+    "C:\\Users\\geron\\.nuget\\packages\\steamkit2\\3.5.0\\steamkit2.3.5.0.nupkg.sha512",
+    "C:\\Users\\geron\\.nuget\\packages\\system.io.hashing\\10.0.12\\system.io.hashing.10.0.12.nupkg.sha512",
+    "C:\\Users\\geron\\.nuget\\packages\\zstdsharp.port\\0.8.8\\zstdsharp.port.0.8.8.nupkg.sha512"
+  ],
+  "logs": []
+}
